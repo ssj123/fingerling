@@ -1,22 +1,39 @@
-
+.log{
+    height: 70px;
+    width: auto;
+}
 .nav{
+    width: 100%;
     height:50px;
     line-height:50px;
+    background: #454545;
+    color: #fff;
+    position: relative;
+    z-index: 99999999;
 }
 .logo{
     padding-right:20px;
+    line-height: 70px;
+    margin-left: 50px;
 }
 .nav-info{
 
 }
 .nav-info a{
-    width:100px;
+    width:220px;
     height:49px;
     display:block;
     float:left;
     text-align:center;
-    border-bottom:1px #666666 solid;
     position:relative;
+    color: #fff;
+}
+.nav-info a:first-child{
+    margin-left: 100px;
+}
+.nav-info a:hover{
+    color: :#ff6600;
+    background: #2e2e2e;
 }
 .nav-info a:after{
     content:"";
@@ -28,7 +45,8 @@
     top:18px;
     background:#666666;
 }
-.nav-info a.active:before{
+/*下边框*/
+/*.nav-info a.active:before{
     content:"";
     width:100px;
     height:2px;
@@ -37,10 +55,16 @@
     right:0;
     bottom:-1px;
     background:#41c7db;
-}
+}*/
 
 .bigImg{
-    padding-top:15px;
+    /*padding-top:15px;*/
+    width: 100%;
+    height: auto;
+}
+.bigImg img{
+    width: 100%;
+    height: auto;
 }
 .titleName{
     color:#ff6600;
@@ -52,7 +76,7 @@
 
 }
 .musicStyle .box{
-    width:100px;
+    width:130px;
     text-align:center;
     float:left;
     margin-right:40px;
@@ -64,6 +88,7 @@
     width:338px;
     padding:20px;
     border:1px #666666 solid;
+    margin-left: 155px;
 }
 .billboard .title{
     height:100px;
@@ -143,7 +168,7 @@
 }
 
 .lgTitle{
-    width:700px;
+    width:1142px;
     margin:30px auto;
     color:#ff6600;
     font-size:20px;
@@ -152,10 +177,16 @@
 }
 .loginBox{
     width:340px;
-    margin:0 auto 50px;
+    /*// margin:0 auto 50px;*/
+    position: relative;
+    top: 0;
+    right: 100px;
+    z-index: 2;
+    float: right;
     border:1px #d3d3d3 solid;
     border-radius:5px;
     padding:45px;
+    background-color: rgba(255,255,255,.8);
 }
 .loginBox .infoBox{
     width:318px;
@@ -179,6 +210,7 @@
     border:0;
     margin-left:10px;
     font-size:14px;
+    background: 0;
 }
 .loginBox .infoRember{
     display:block;
@@ -329,7 +361,7 @@
     overflow-y:auto;
 }
 .musicStyle{
-    width:430px;
+    width:1000px;
     margin:40px auto 0;
     border:1px #d3d3d3 solid;
     padding:20px;
